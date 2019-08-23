@@ -1,4 +1,4 @@
-package com.codecool.emem;
+package com.codecool.emem.game;
 
 public class Main {
 

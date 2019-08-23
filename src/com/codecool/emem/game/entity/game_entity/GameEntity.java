@@ -1,4 +1,6 @@
-package com.codecool.emem;
+package com.codecool.emem.game.entity.game_entity;
+
+import com.codecool.emem.game.entity.Position;
 
 public class GameEntity {
     private Position position;
@@ -8,5 +10,8 @@ public class GameEntity {
     protected int dexterity;
 
     public void move() {
+    }
+
+    public static void calculateMovementPoints() {
     }
 }

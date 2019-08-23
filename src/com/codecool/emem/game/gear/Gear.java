@@ -1,4 +1,4 @@
-package com.codecool.emem;
+package com.codecool.emem.game.gear;
 
 public class Gear {
     protected int attackBonus;
