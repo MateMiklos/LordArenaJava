@@ -2,7 +2,7 @@ package com.codecool.emem.game.entity.game_entity;
 
 import com.codecool.emem.game.entity.Position;
 
-public class GameEntity {
+public abstract class GameEntity {
     private Position position;
     private int movementPoints;
     protected int strength;

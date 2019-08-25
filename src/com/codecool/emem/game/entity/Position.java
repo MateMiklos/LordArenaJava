@@ -1,7 +1,10 @@
 package com.codecool.emem.game.entity;
 
 public enum Position {
-    POSITION();
+    POSITION(0,0);
+
+    private int xCoordinate;
+    private int yCoordinate;
 
     Position(int xCoordinate, int yCoordinate) {
         this.xCoordinate = xCoordinate;
@@ -10,12 +13,9 @@ public enum Position {
 
     public int getCoordinateX() {
         return xCoordinate;
-    }
 
+    }
     public int getCoordinateY() {
         return yCoordinate;
     }
-
-    private int xCoordinate;
-    private int yCoordinate;
 }
