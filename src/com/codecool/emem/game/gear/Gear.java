@@ -5,12 +5,10 @@ public abstract class Gear {
     protected int defenseBonus;
     protected int damageBonus;
     protected int armorBonus;
+    protected WeaponAttributes weaponAttributes;
 
-    public Gear(int attackBonus, int defenseBonus, int damageBonus, int armorBonus) {
-        this.attackBonus = attackBonus;
-        this.defenseBonus = defenseBonus;
-        this.damageBonus = damageBonus;
-        this.armorBonus = armorBonus;
+    public Gear(WeaponAttributes weaponAttributes) {
+        this.weaponAttributes = weaponAttributes;
     }
 
     public int getAttackBonus() {

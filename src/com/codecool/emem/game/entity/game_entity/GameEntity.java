@@ -24,10 +24,6 @@ public abstract class GameEntity {
     public void move() {
     }
 
-    public boolean attemptStrength() {
-        return false;
-    }
-
     public boolean performAttack() {
         if (myThrow.throwWithD20() - attack < strength) return true;
         else return false;
@@ -38,7 +34,7 @@ public abstract class GameEntity {
         if (movementPoints == 0) movementPoints++;
     }
 
-    private void setAttack(int attack) {
+    private void addAttackBonusToAttack(int attack) {
         this.attack = attack;
     }
 }
