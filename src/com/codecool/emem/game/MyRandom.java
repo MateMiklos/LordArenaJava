@@ -7,7 +7,7 @@ public class MyRandom {
     private Random random = new Random();
     
     private int generateRandomNumberBetween(int min, int max) {
-        return random.nextInt(max - min + 1);
+        return random.nextInt(max - min + 1) + min;
     }
     
     public int throwWithD20() {
