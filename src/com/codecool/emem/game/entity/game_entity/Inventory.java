@@ -15,6 +15,14 @@ public class Inventory {
     private Armor armsArmor;
     private Armor legsArmor;
 
+    public Weapon getMainHandWeapon() {
+        return mainHandWeapon;
+    }
+
+    public Weapon getOffHandWeapon() {
+        return offHandWeapon;
+    }
+
     public List<Armor> getArmorSet() {
         List<Armor> armorSet = new LinkedList<>();
         armorSet.add(headArmor);

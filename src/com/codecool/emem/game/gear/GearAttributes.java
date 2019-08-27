@@ -16,6 +16,20 @@ public enum GearAttributes {
     LONGBOW(0,1,3,0,10, "two-handed"),
     SHORTBOW(0,1,4,0,7, "two-handed"),
     CROSSBOW(0,0,4,0,5, "two-handed"),
+    // ARMOR
+    LIGHT_HEAD_ARMOR(0,0,0,0,0,"head"),
+    LIGHT_TORSO_ARMOR(0,0,0,1,0,"torso"),
+    LIGHT_ARMS_ARMOR(0,0,0,0,0,"arms"),
+    LIGHT_LEGS_ARMOR(0,0,0,1,0,"legs"),
+    MEDIUM_HEAD_ARMOR(0,0,0,2,0,"head"),
+    MEDIUM_TORSO_ARMOR(0,0,0,3,0,"torso"),
+    MEDIUM_ARMS_ARMOR(0,3,0,1,0,"arms"),
+    MEDIUM_LEGS_ARMOR(0,2,0,1,0,"legs"),
+    HEAVY_HEAD_ARMOR(0,0,0,3,0,"head"),
+    HEAVY_TORSO_ARMOR(0,0,0,4,0,"torso"),
+    HEAVY_ARMS_ARMOR(2,6,1,2,0,"arms"),
+    HEAVY_LEGS_ARMOR(2,4,1,2,0,"legs"),
+
     ;
 
     private int attackBonus;
