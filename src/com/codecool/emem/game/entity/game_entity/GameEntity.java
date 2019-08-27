@@ -15,11 +15,22 @@ public abstract class GameEntity {
     protected int intellect;
     protected int dexterity;
 
+    // RESOURCE POINTS
+    protected int health = 10;
+    protected int mana = 10;
+    protected int energy = 10;
+
     // COMBAT VALUES
     protected int attack;
     protected int defense;
     protected int damage;
     protected int armor;
+
+    protected void addAttributesToResourceValues() {
+        health += strength;
+        mana += intellect;
+        energy += dexterity;
+    }
 
     public void move() {
     }

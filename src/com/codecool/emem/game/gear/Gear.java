@@ -1,14 +1,15 @@
 package com.codecool.emem.game.gear;
 
 public abstract class Gear {
+
     protected int attackBonus;
     protected int defenseBonus;
     protected int damageBonus;
     protected int armorBonus;
-    protected WeaponAttributes weaponAttributes;
+    protected GearAttributes gearAttributes;
 
-    public Gear(WeaponAttributes weaponAttributes) {
-        this.weaponAttributes = weaponAttributes;
+    public Gear(GearAttributes gearAttributes) {
+        this.gearAttributes = gearAttributes;
     }
 
     public int getAttackBonus() {
@@ -26,4 +27,5 @@ public abstract class Gear {
     public int getArmorBonus() {
         return armorBonus;
     }
+
 }
