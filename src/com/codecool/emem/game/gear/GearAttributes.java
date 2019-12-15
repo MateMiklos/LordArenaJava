@@ -40,7 +40,14 @@ public enum GearAttributes {
     private String slotType;
 
     GearAttributes(int attackBonus, int defenseBonus, int damageBonus, int armorBonus, int range, String slotType) {
+        this.attackBonus = attackBonus;
+        this.defenseBonus = defenseBonus;
+        this.damageBonus = damageBonus;
+        this.armorBonus = armorBonus;
+        this.range = range;
+        this.slotType = slotType;
     }
+
 
     public int getAttackBonus() {
         return attackBonus;
